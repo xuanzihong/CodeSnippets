@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Label</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let Label = UILabel()
+Label.backgroundColor = .white
+Label.clipsToBounds = true
+Label.font = .systemFont(ofSize: 17.0, weight: .regular)
+Label.textColor = .textBlack
+Label.textAlignment = .natural
+Label.text = ""
+&lt;#supview#&gt;.addSubview(Label)
+
+Label.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>09C47053-F736-4014-8892-CD339B3F726E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-Label</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

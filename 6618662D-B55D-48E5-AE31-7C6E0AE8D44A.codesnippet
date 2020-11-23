@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Btn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *Btn = [UIButton buttonWithType:UIButtonTypeSystem];
+Btn.backgroundColor = UIColor.whiteColor;
+Btn.titleLabel.font = [UIFont systemFontOfSize:15.0 weight:UIFontWeightRegular];
+[Btn setTitle:@"" forState:UIControlStateNormal];
+[Btn setTitleColor:UIColor.darkTextColor forState:UIControlStateNormal];
+[Btn setImage:[[UIImage imageNamed:@""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+[Btn setImage:[[UIImage imageNamed:@""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateSelected];
+[Btn setImage:[[UIImage imageNamed:@""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal | UIControlStateHighlighted];
+[Btn setImage:[[UIImage imageNamed:@""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateSelected | UIControlStateHighlighted];
+[Btn addTarget:self action:@selector(ClickEvent:) forControlEvents:UIControlEventTouchUpInside];
+[&lt;#supview#&gt; addSubview:Btn];
+
+- (void)ClickEvent:(UIButton *)sender {
+    
+}
+
+[Btn mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.top.equalTo(&lt;#@(0.0)#&gt;);
+    make.right.equalTo(&lt;#@(0.0)#&gt;);
+    make.bottom.equalTo(&lt;#@(0.0)#&gt;);
+    make.left.equalTo(&lt;#@(0.0)#&gt;);
+    make.height.equalTo(&lt;#@(0.0)#&gt;);
+    make.width.equalTo(&lt;#@(0.0)#&gt;);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6618662D-B55D-48E5-AE31-7C6E0AE8D44A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>OC-创建UIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

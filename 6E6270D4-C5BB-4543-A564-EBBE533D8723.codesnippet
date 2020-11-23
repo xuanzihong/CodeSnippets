@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>View</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let View = UIView()
+View.backgroundColor = .white
+&lt;#supview#&gt;.addSubview(View)
+
+View.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6E6270D4-C5BB-4543-A564-EBBE533D8723</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

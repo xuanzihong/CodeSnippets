@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Swift-Collection</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+var collectionLayout: UICollectionViewFlowLayout {
+    return collection.collectionViewLayout as! UICollectionViewFlowLayout
+}
+
+collection.backgroundColor = .white
+if #available(iOS 10.0, *) {
+    collection.isPrefetchingEnabled = true
+}
+collection.dataSource = self
+collection.delegate = self
+&lt;#supview#&gt;.addSubview(collection)
+
+UICollectionViewCell.register(collection)
+
+collectionLayout.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+collectionLayout.minimumInteritemSpacing = 0.0
+collectionLayout.minimumLineSpacing = 0.0
+collectionLayout.itemSize = CGSize(width: 0.0, height: 0.0)
+
+collection.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6769D11A-F3BA-4643-9DF3-9D41DB7CF0A5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-Collection</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

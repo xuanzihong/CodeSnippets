@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let textField = UITextField()
+textField.backgroundColor = .white
+textField.font = .systemFont(ofSize: 14.0, weight: .regular)
+textField.textColor = .textBlack
+textField.borderStyle = .none
+textField.isSecureTextEntry = false
+textField.placeholder = ""
+textField.keyboardType = .default
+&lt;#supview#&gt;.addSubview(textField)
+
+textField.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BD0D9A4C-A3EF-46C8-9131-84E73D7C6A11</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-TextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

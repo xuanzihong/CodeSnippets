@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let table = UITableView()
+table.backgroundColor = .white
+table.delegate = self
+table.dataSource = self
+table.rowHeight = UITableViewCell.height
+table.estimatedRowHeight = 0.0
+&lt;#supview#&gt;.addSubview(table)
+
+UITableViewCell.register(table)
+
+table.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B16B9BD-7157-489F-BCBA-C57F1FB611FE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-TableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

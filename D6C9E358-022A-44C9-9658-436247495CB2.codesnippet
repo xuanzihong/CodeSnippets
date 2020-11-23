@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITextField *textField = [UITextField new];
+textField.backgroundColor = UIColor.whiteColor;
+textField.font = [UIFont fontOfSize:14.0 weight:KFontWeightRegular];
+textField.textColor = UIColor.textBlack;
+textField.borderStyle = UITextBorderStyleNone;
+textField.secureTextEntry = true;
+textField.placeholder = @"";
+textField.keyboardType = UIKeyboardTypeDefault;
+[&lt;#supview#&gt; addSubview:textField];
+
+[textField mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.top.equalTo(&lt;#@(0.0)#&gt;);
+    make.right.equalTo(&lt;#@(0.0)#&gt;);
+    make.bottom.equalTo(&lt;#@(0.0)#&gt;);
+    make.left.equalTo(&lt;#@(0.0)#&gt;);
+    make.height.equalTo(&lt;#@(0.0)#&gt;);
+    make.width.equalTo(&lt;#@(0.0)#&gt;);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D6C9E358-022A-44C9-9658-436247495CB2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>OC-创建TextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

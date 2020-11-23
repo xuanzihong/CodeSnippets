@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Extension</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private var OpaqueKey: Void?
+
+extension &lt;#class#&gt; {
+    
+    private var opaque: Opaque {
+        if let opaque = objc_getAssociatedObject(self, &amp;OpaqueKey) as? Opaque {
+            return opaque
+        }
+        
+        let opaque = Opaque()
+        objc_setAssociatedObject(self, &amp;OpaqueKey, opaque, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        
+        return opaque
+    }
+    
+}
+
+// MARK: - Opaque
+private class Opaque {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FF204927-9933-4614-900A-FCA0919D20AC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-All-Extension</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

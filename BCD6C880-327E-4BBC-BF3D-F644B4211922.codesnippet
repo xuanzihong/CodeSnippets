@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Initialize</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class View: UIView {
+    
+    override var intrinsicContentSize: CGSize {
+        let size = super.intrinsicContentSize
+        return size
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialize()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+    
+}
+
+// MARK: - Method
+extension View {
+    
+}
+
+// MARK: - Private
+private extension View {
+    
+    func initialize() {
+        backgroundColor = .white
+        
+        makeUI()
+    }
+    
+    func makeUI() {
+        
+    }
+    
+}
+
+// MARK: - Handler
+private extension View {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BCD6C880-327E-4BBC-BF3D-F644B4211922</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-InitializeView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

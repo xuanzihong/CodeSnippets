@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITableView *table = [UITableView new];
+    table.backgroundColor = UIColor.whiteColor;
+    table.delegate = self;
+    table.dataSource = self;
+    table.rowHeight = 45.0;
+    table.estimatedRowHeight = 0.0;
+[&lt;#supview#&gt; addSubview:table];
+
+static NSString *cellIdentifier = @"UITableViewCell";
+
+[table registerClass:UITableViewCell.self forCellReuseIdentifier:cellIdentifier];
+
+[table mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.top.equalTo(&lt;#@(0.0)#&gt;);
+    make.right.equalTo(&lt;#@(0.0)#&gt;);
+    make.bottom.equalTo(&lt;#@(0.0)#&gt;);
+    make.left.equalTo(&lt;#@(0.0)#&gt;);
+    make.height.equalTo(&lt;#@(0.0)#&gt;);
+    make.width.equalTo(&lt;#@(0.0)#&gt;);
+}];
+
+#pragma mark - UITableViewDelegate &lt;UITableViewDataSource, UITableViewDelegate&gt;
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    return cell;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B56EAFE7-174A-421E-9A67-D7C90D601F29</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>OC-创建UITableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

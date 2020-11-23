@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Btn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let Btn = UIButton(type: .system)
+Btn.backgroundColor = .white
+Btn.titleLabel?.backgroundColor = Btn.backgroundColor
+Btn.titleLabel?.clipsToBounds = true
+Btn.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .regular)
+Btn.setTitle("", for: .normal)
+Btn.setTitleColor(.textBlack, for: .normal)
+Btn.setImage(UIImage(named: ""), for: .normal)
+Btn.setImage(UIImage(named: ""), for: .selected)
+Btn.setImage(UIImage(named: ""), for: [.normal, .highlighted])
+Btn.setImage(UIImage(named: ""), for: [.selected, .highlighted])
+Btn.addTarget(self, action: #selector(ClickHandler(_:)), for: .touchUpInside)
+&lt;#supview#&gt;.addSubview(Btn)
+
+@objc func ClickHandler(_ sender: UIButton) {
+    
+}
+
+Btn.snp.makeConstraints {
+    $0.top.equalTo(&lt;#0.0#&gt;)
+    $0.right.equalTo(&lt;#0.0#&gt;)
+    $0.bottom.equalTo(&lt;#0.0#&gt;)
+    $0.left.equalTo(&lt;#0.0#&gt;)
+    $0.height.equalTo(&lt;#0.0#&gt;)
+    $0.width.equalTo(&lt;#0.0#&gt;)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9F871250-160A-451B-9E3D-05E01C3280AA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-iOS-Button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

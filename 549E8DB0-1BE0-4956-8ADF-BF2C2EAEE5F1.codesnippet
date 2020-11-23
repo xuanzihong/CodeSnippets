@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Request</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// 请求
+///
+/// - Parameters:
+///   - completionEvent: 完成事件
+class func request&lt;#Name#&gt;(_ completionEvent: @escaping (Net.Result&lt;&lt;#ResponseRawModel#&gt;&gt;) -&gt; Void) {
+    SVProgressHUD.show()
+    
+    let parameters: [String : Any]? = nil
+    Net.request(API.&lt;#url#&gt;, parameters: parameters) {
+        switch $0 {
+        case .success(let rawModel):
+            let object = rawModel.object as? [String : Any]
+            completionEvent(.success(&lt;#responseRawModel#&gt;))
+            
+        case .failure(let error):
+            completionEvent(.failure(error))
+        }
+        
+        SVProgressHUD.dismiss()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>549E8DB0-1BE0-4956-8ADF-BF2C2EAEE5F1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift-All-数据中心请求段</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
